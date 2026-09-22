@@ -410,6 +410,12 @@ abstract class IntegrationTestBase {
           "src/test/kotlin/uk/gov/justice/digital/hmpps/hmppsintegrationapi/gateways/manageUsers/fixtures/UserFoundResponse.json",
         ).readText(),
       )
+      manageUsersMockServer.stubForGet(
+        "/prisonusers/by-email/testName/details",
+        File(
+          "src/test/kotlin/uk/gov/justice/digital/hmpps/hmppsintegrationapi/gateways/manageUsers/fixtures/PrisonUsersResponse.json",
+        ).readText(),
+      )
 
       probationSearchMockServer.start()
       managePomCaseMockServer.start()
