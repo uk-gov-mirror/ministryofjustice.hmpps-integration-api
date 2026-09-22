@@ -38,6 +38,7 @@ data class FeatureFlagConfig(
     const val RESTAPICLIENT_FOR_PRISON_API_GATEWAY = "restapiclient-for-prison-api-gateway"
     const val PERSON_SEARCH_V2_ENABLED = "person-search-v2-enabled"
     const val USE_LAO_ENABLED_BY_DEFAULT = "use-lao-enabled-by-default"
+    const val PRISON_ROLE_CHECK_ENABLED = "prison-role-check-enabled"
 
     // Events feature flags
     const val ENABLE_DELETE_PROCESSED_EVENTS = "enable-delete-processed-events"
